@@ -1,0 +1,16 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./roadv2/train/images
+val: ./roadv2/valid/images
+test: ./roadv2/test/images
+
+box_format: 'xyxy'
+
+nc: 8
+names: ['ambulance', 'bicycle', 'bus', 'car', 'child', 'motorcycle', 'pedestrian', 'truck']
+
+roboflow:
+  workspace: emia-6giqy
+  project: road-xuvfa
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/emia-6giqy/road-xuvfa/dataset/2
